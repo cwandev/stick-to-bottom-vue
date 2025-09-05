@@ -1,0 +1,44 @@
+{
+  "name": "stick-to-bottom-vue",
+  "type": "module",
+  "version": "0.0.0",
+  "private": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js"
+    }
+  },
+  "main": "dist/index.es.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "build:lib": "vite build -c vite.lib.config.ts"
+  },
+  "peerDependencies": {
+    "vue": ">=3.3.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^5.2.2",
+    "@egoist/tailwindcss-icons": "^1.9.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/node": "^24.3.1",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.7.0",
+    "eslint": "^9.34.0",
+    "lorem-ipsum": "^2.0.8",
+    "tailwindcss": "^4.1.13",
+    "typescript": "~5.8.3",
+    "vite": "^7.1.2",
+    "vite-plugin-dts": "^4.5.4",
+    "vue": "^3.5.18",
+    "vue-tsc": "^3.0.5"
+  }
+}

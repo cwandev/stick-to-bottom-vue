@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "@egoist/tailwindcss-icons";
+
+@source "./**/*.{html,vue,ts,tsx,js,jsx}";
+@source "../src/**/*.{vue,ts,tsx,js,jsx}";
