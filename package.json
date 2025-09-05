@@ -3,6 +3,33 @@
   "type": "module",
   "version": "0.0.0",
   "private": false,
+  "description": "A lightweight Vue utility intended mainly for AI chat applications, for smoothly sticking to the bottom of messages.",
+  "author": {
+    "name": "Wang Chao",
+    "url": "https://github.com/cwandev"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/cwandev/stick-to-bottom-vue#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwandev/stick-to-bottom-vue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cwandev/stick-to-bottom-vue/issues"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "stick-to-bottom",
+    "scroll",
+    "chat",
+    "auto-scroll",
+    "scroll-to-bottom",
+    "resizeobserver",
+    "infinite-list",
+    "ui"
+  ],
+  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -19,26 +46,50 @@
     "dev": "vite",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "build:lib": "vite build -c vite.lib.config.ts"
+    "build:lib": "vite build -c vite.lib.config.ts",
+    "prepublishOnly": "pnpm build:lib",
+    "release": "bumpp --commit --push --tag",
+    "prepare": "simple-git-hooks"
   },
   "peerDependencies": {
     "vue": ">=3.3.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.2.2",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@egoist/tailwindcss-icons": "^1.9.0",
+    "@iconify-json/ph": "^1.2.2",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.13",
     "@types/node": "^24.3.1",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.7.0",
+    "bumpp": "^10.2.3",
     "eslint": "^9.34.0",
+    "lint-staged": "^16.1.6",
     "lorem-ipsum": "^2.0.8",
+    "simple-git-hooks": "^2.13.1",
     "tailwindcss": "^4.1.13",
     "typescript": "~5.8.3",
     "vite": "^7.1.2",
     "vite-plugin-dts": "^4.5.4",
     "vue": "^3.5.18",
     "vue-tsc": "^3.0.5"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "pnpm commitlint --edit ${1}"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
