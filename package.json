@@ -44,10 +44,12 @@
   ],
   "scripts": {
     "dev": "vite",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
+    "build:demo": "vite build",
+    "preview:demo": "vite preview --host",
     "build:lib": "vite build -c vite.lib.config.ts",
     "prepublishOnly": "pnpm build:lib",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "release": "bumpp --commit --push --tag",
     "prepare": "simple-git-hooks"
   },
