@@ -1,4 +1,4 @@
-## stick-to-bottom-vue
+## vue-stick-to-bottom
 
 A lightweight Vue utility intended mainly for AI chat applications, for smoothly sticking to the bottom of messages. It preserves visual stability on resize, allows user escape by scrolling up, and exposes handy methods and refs.
 
@@ -12,7 +12,7 @@ A lightweight Vue utility intended mainly for AI chat applications, for smoothly
 ### Install
 
 ```bash
-pnpm add stick-to-bottom-vue
+pnpm add vue-stick-to-bottom
 # or npm i / yarn add
 ```
 
@@ -20,7 +20,7 @@ pnpm add stick-to-bottom-vue
 
 ```vue
 <script setup lang="ts">
-import { StickToBottom } from 'stick-to-bottom-vue'
+import { StickToBottom } from 'vue-stick-to-bottom'
 
 const messages = Array.from({ length: 20 }, (_, i) => `Message ${i}`)
 </script>
@@ -39,7 +39,7 @@ const messages = Array.from({ length: 20 }, (_, i) => `Message ${i}`)
 ### Quick start (composable)
 
 ```ts
-import { useStickToBottom } from 'stick-to-bottom-vue'
+import { useStickToBottom } from 'vue-stick-to-bottom'
 import { onMounted } from 'vue'
 
 const { scrollRef, contentRef, isAtBottom, scrollToBottom, stopScroll } = useStickToBottom({

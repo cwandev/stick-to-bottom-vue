@@ -13,7 +13,7 @@ export default defineConfig({
   plugins: [vue(), tailwindcss()],
   resolve: {
     alias: {
-      'stick-to-bottom-vue': path.resolve(__dirname, 'src/index.ts'),
+      'vue-stick-to-bottom': path.resolve(__dirname, 'src/index.ts'),
     },
   },
 })

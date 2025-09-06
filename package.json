@@ -1,5 +1,5 @@
 {
-  "name": "stick-to-bottom-vue",
+  "name": "vue-stick-to-bottom",
   "type": "module",
   "version": "0.1.0",
   "private": false,
@@ -9,13 +9,13 @@
     "url": "https://github.com/cwandev"
   },
   "license": "MIT",
-  "homepage": "https://github.com/cwandev/stick-to-bottom-vue#readme",
+  "homepage": "https://github.com/cwandev/vue-stick-to-bottom#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cwandev/stick-to-bottom-vue.git"
+    "url": "git+https://github.com/cwandev/vue-stick-to-bottom.git"
   },
   "bugs": {
-    "url": "https://github.com/cwandev/stick-to-bottom-vue/issues"
+    "url": "https://github.com/cwandev/vue-stick-to-bottom/issues"
   },
   "keywords": [
     "vue",

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useStickToBottomContext } from 'stick-to-bottom-vue'
+import { useStickToBottomContext } from 'vue-stick-to-bottom'
 
 const { stopScroll } = useStickToBottomContext()
 </script>

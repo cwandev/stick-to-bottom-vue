@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { StickToBottom } from 'stick-to-bottom-vue'
 import { ref } from 'vue'
+import { StickToBottom } from 'vue-stick-to-bottom'
 import ScrollToBottom from './components/ScrollToBottom.vue'
 import StopScroll from './components/StopScroll.vue'
 import { useFakeMessages } from './composables/useFakeMessages'

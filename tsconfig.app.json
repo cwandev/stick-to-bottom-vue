@@ -5,7 +5,7 @@
 
     "baseUrl": ".",
     "paths": {
-      "stick-to-bottom-vue": ["./src/index.ts"]
+      "vue-stick-to-bottom": ["./src/index.ts"]
     },
     /* Linting */
     "strict": true,
