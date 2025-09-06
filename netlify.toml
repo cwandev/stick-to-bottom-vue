@@ -1,6 +1,5 @@
 [build]
-base = "demo"
-publish = "dist"
+publish = "demo/dist"
 command = "pnpm run build:demo"
 
 [build.environment]
